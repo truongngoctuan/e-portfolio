@@ -31,18 +31,19 @@ FrontEnd stack:
 * React, redux, NextJs
 * State management: redux, valtio
 * styled-components
-* integrate with block-based Lexical editor (similar to Notion) to provide interactive command-like actions
+* integrate with block-based Lexical editor (similar to Notion) to provide interactive command-like actions, customize [a select node](Silent/Lexical/custom-select/CustomSelect.component.tsx)
 * code samples for [a React component](Silent/CodeSamples/module_mail/mail-item/MailItem.tsx) with hooks, TypeScript type definition, valtio store, styled-components
 * code samples: [a shared component](Silent/CodeSamples/design_system/ReactSelect//ReactSelect.tsx) from design system, customize ReactSelect lib to provide simpler version and adapt to current theme
   
 
 BackEnd stack:
-* GOlang APIs, Dockerize
+* GOlang APIs, Dockerize, mongoDB
 * multi-tenant, microservices using nat.io as service bus
 * BFF architecture
 * Switch between Restful APIs and Websocket to retrieve event notification for FE
 * CI/CD from GitLab running ShellScript
 * end to end testing using PlayWright for happy cases
+* custom proto code generation for both API Golang server, and API Typescript server for both RESTfulAPI and websocket connection
 
 ## Multi-players web-based racing game to engage kid to learn literacy
 Here is the [porfolio of Readirace game](https://yummyux.com.au/readiracer/) from Lead designer of 3PL, presenting the idea and implementation
