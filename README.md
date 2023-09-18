@@ -56,6 +56,7 @@ BackEnd
 * Websocket and long-polling connection to ensure data updated across multiple players in the same room
 * show number of online users
 * Join room
-* [Technical design](3PL/PYCO-TechnicaldesignforReadiRacergame-060921-0913.pdf)
+* [Technical design1](3PL/PYCO-TechnicaldesignforReadiRacergame-060921-0913.pdf) [Technical design 2](3PL/PYCO-MultiplayermodeforReadiRacer-060921-0913.pdf) for game
 * Cypress end to end testing
 * Postman/NewMan to automate APIs testing
+* [System design](3PL/SATURN-SchoolActivityUsageReport-060921-0915.pdf) for report and [background request](3PL/SATURN-BackgroundRequestProcessingSystem-060921-0917.pdf)
