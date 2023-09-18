@@ -33,13 +33,13 @@ FrontEnd stack:
 * styled-components
 * integrate with block-based Lexical editor (similar to Notion) to provide interactive command-like actions, customize [a select node](Silent/Lexical/custom-select/CustomSelect.component.tsx)
 * code samples for [a React component](Silent/CodeSamples/module_mail/mail-item/MailItem.tsx) with hooks, TypeScript type definition, valtio store, styled-components
-* code samples: [a shared component](Silent/CodeSamples/design_system/ReactSelect//ReactSelect.tsx) from design system, customize ReactSelect lib to provide simpler version and adapt to current theme
+* code samples: [a shared component](Silent/CodeSamples/design_system/ReactSelect/ReactSelect.tsx) from design system, customize ReactSelect lib to provide simpler version and adapt to current theme
   
 
 BackEnd stack:
 * GOlang APIs, Dockerize, mongoDB
 * multi-tenant, microservices using nat.io as service bus
-* BFF architecture
+* BFF architecture (ensure simplicity in FE side, shifting rules and complexity to BE side for easy testing)
 * Switch between Restful APIs and Websocket to retrieve event notification for FE
 * CI/CD from GitLab running ShellScript
 * end to end testing using PlayWright for happy cases
