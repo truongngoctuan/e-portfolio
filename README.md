@@ -24,3 +24,33 @@ An [application](https://github.com/truongngoctuan/coding-test001) that submit a
 * FrontEnd: Angular application with 2 components to display users and create new one
 * BackEnd: Net Core Web Api to delivery RESTful API
 
+## Web-based application for private clinics
+Apply Design Thinking, OKR in the process of implementing new application, integrate with SOAP based APIs, and standards in healthcare
+FrontEnd stack:
+* React, redux, NextJs
+* State management: redux, valtio
+* styled-components
+* integrate with block-based editor (similar to Notion) to provide interactive command-like actions
+* 
+
+BackEnd stack:
+* GOlang APIs, Dockerize
+* multi-tenant, microservices using nat.io as service bus
+* BFF architecture
+* Switch between Restful APIs and Websocket to retrieve event notification for FE
+* CI/CD from GitLab running ShellScript
+* end to end testing using PlayWright for happy cases
+
+## Multi-players web-based racing game to engage kid to learn literacy
+Here is the [porfolio of Readirace game](https://yummyux.com.au/readiracer/) from Lead designer of 3PL, presenting the idea and implementation
+FrontEnd
+* using Lottie and animation library to control objects and doing animation as per event
+* ViewPort detection for iOS and Android devices to change layout on keyboard showing up (challenge with older iOS version in Safari)
+
+BackEnd
+* Websocket and long-polling connection to ensure data updated across multiple players in the same room
+* show number of online users
+* Join room
+* [Technical design](3PL/PYCO-TechnicaldesignforReadiRacergame-060921-0913.pdf)
+* Cypress end to end testing
+* Postman/NewMan to automate APIs testing
