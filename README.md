@@ -34,6 +34,7 @@ FrontEnd stack:
 * integrate with block-based Lexical editor (similar to Notion) to provide interactive command-like actions, customize [a select node](Silent/Lexical/custom-select/CustomSelect.component.tsx)
 * code samples for [a React component](Silent/CodeSamples/module_mail/mail-item/MailItem.tsx) with hooks, TypeScript type definition, valtio store, styled-components
 * code samples: [a shared component](Silent/CodeSamples/design_system/ReactSelect/ReactSelect.tsx) from design system, customize ReactSelect lib to provide simpler version and adapt to current theme
+* Implement WebWorkers to prove fuzzy search capacity in the browser for a fixed set of text data
   
 
 BackEnd stack:
@@ -51,6 +52,7 @@ Here is the [porfolio of Readirace game](https://yummyux.com.au/readiracer/) fro
 FrontEnd
 * using Lottie and animation library to control objects and doing animation as per event
 * ViewPort detection for iOS and Android devices to change layout on keyboard showing up (challenge with older iOS version in Safari)
+* Micro-frontend using iframe, sharing authentication tokens, each module host in different repositories
 
 BackEnd
 * Websocket and long-polling connection to ensure data updated across multiple players in the same room
