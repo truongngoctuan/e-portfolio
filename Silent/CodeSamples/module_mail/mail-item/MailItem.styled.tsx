@@ -1,8 +1,8 @@
-import Theme from '@tutum/mvz/theme';
-import { getCssClass } from '@tutum/design-system/infrastructure/utils';
+import Theme from '@theme';
+import { getCssClass } from '@design-system/infrastructure/utils';
 
 import OriginalMailItem, { IMailItemProps } from './MailItem';
-import { FONT_FAMILY } from '@tutum/design-system/themes/styles/typo/font-family';
+import { FONT_FAMILY } from '@design-system/themes/styles/typo/font-family';
 
 const MailItem: React.ComponentType<IMailItemProps> = Theme.styled(
   OriginalMailItem
