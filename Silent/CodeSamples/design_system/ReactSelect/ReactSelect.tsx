@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Icon } from '@tutum/design-system/components/Core';
+import { Icon } from 'design-system/components/Core';
 import ReactSelect, { Props, GroupBase } from 'react-select';
-import { COLOR } from '@tutum/design-system/themes/styles';
-import { scaleSpace } from '@tutum/design-system/styles';
+import { COLOR } from 'design-system/themes/styles';
+import { scaleSpace } from 'design-system/styles';
 import ISelect from 'react-select/dist/declarations/src/Select';
-import I18n from '@tutum/infrastructure/i18n';
+import I18n from 'infrastructure/i18n';
 import { useTheme } from 'styled-components';
-import { BaseDefaultTheme } from '@tutum/design-system/themes';
+import { BaseDefaultTheme } from 'design-system/themes';
 
 export interface IMenuItem<T = number | string> {
   value: T;
