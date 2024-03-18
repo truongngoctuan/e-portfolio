@@ -19,9 +19,9 @@ import {
   markRead,
   MarkReadRequest,
   syncInboxMailByAccount,
-} from '@tutum/hermes/bff/app_mvz_mail';
-import { Order, PaginationRequest } from '@tutum/hermes/bff/common';
-import { EmailItem, SearchType } from '@tutum/hermes/bff/mail_common';
+} from 'app_mail';
+import { Order, PaginationRequest } from 'common';
+import { EmailItem, SearchType } from 'mail_common';
 import { getIndexSelectedMail } from './Mailbox.helper';
 
 export interface IMailInfo {
