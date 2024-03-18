@@ -1,8 +1,8 @@
 import React, { FC, memo, useMemo } from "react";
-import type MailboxI18n from "@tutum/mvz/locales/en/Mailbox.json";
+import type MailboxI18n from "locales/en/Mailbox.json";
 
-import { MailItemDTO } from "@tutum/hermes/bff/app_mvz_mail";
-import { SearchType } from "@tutum/hermes/bff/mail_common";
+import { MailItemDTO } from "app_mail";
+import { SearchType } from "mail_common";
 
 import {
   BodyTextM,
@@ -10,12 +10,12 @@ import {
   Flex,
   H4,
   Svg,
-} from "@tutum/design-system/components";
+} from "design-system/components";
 import { MailTag, MailContent, parseAddressToName } from "..";
-import DateTimeUtil from "@tutum/infrastructure/utils/datetime.util";
-import { DATE_TIME_WITHOUT_SECONDS_FORMAT } from "@tutum/mvz/constant/dateTime";
-import i18n from "@tutum/infrastructure/i18n";
-import { getPositionsToHighlight } from "@tutum/infrastructure/utils/match";
+import DateTimeUtil from "infrastructure/utils/datetime.util";
+import { DATE_TIME_WITHOUT_SECONDS_FORMAT } from "constant/dateTime";
+import i18n from "infrastructure/i18n";
+import { getPositionsToHighlight } from "infrastructure/utils/match";
 import { mailboxActions, useMailboxStore } from "../Mailbox.store";
 
 const AttachmentIcon = "/images/attachment.svg";
