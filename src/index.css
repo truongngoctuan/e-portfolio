@@ -67,3 +67,23 @@
     @apply bg-background text-foreground;
   }
 }
+
+.debug-0 {
+  border: 1px solid brown;
+}
+
+.debug-1 {
+  border: 1px solid red;
+}
+
+.debug-2 {
+  border: 1px solid orange;
+}
+
+.debug-3 {
+  border: 1px solid purple;
+}
+
+.debug-4 {
+  border: 1px solid darkblue;
+}
