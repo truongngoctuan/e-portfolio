@@ -1,93 +1,35 @@
-# e-portfolio
+# Portfolio
 
-This page provides more technical information about my experiences and past projects, interview screening tests, sample codes with removed company logic for simplicity, including both ReactJS, .NET Core, Golang, and system design.
+Hi, I'm Anthony TRUONG, a software engineer with 8+ years of experience in the IT industry. I have a strong background in web development.
 
-## Demo application using React and Node.js with clean architecture
+I am passionate about building scalable and efficient applications that solve real-world problems.
 
-Build a simple FE and BE application to demonstrate the use of popular React libraries.
+Visit my [Projects page](projects.md) to see other projects of mine.
 
-[FE React application](https://github.com/truongngoctuan/si-screening-fe-app)
+## Currently Tinkering With
 
-* This project was bootstrapped with Create React App, using the Redux and Redux Toolkit template.
-* Integrated with Tailwind CSS.
-* Provides basic unit tests for reducers.
+### [EInkGames](https://truongngoctuan.github.io/eink-games)
 
-[BE application](https://github.com/truongngoctuan/si-screening-be-app)
+I've used devices like Kindle Whitepaper for years now, but I wanted to experiment and see how using Kindle for other puprpose. So far has been good when I want to step away from technology and just be able to consume Kindle books without distraction.
 
-* Provides an example of a simple RESTful API Node.js application.
-* Technical stack:
-  * Node.js, TypeScript
-  * RESTful API hapi, swagger
-  * MongoDB, Mongoose
-* Each service follows a 3-layer architecture.
+This project is about buidling a web application for Kindle to help users interact with simple services such as taking notes. The application is built using ReactJS, Redux, and Next.js.
+The current state of the project is tested in the Kindle browser with a simple Sudoku to attract users to use the application, and I am planning to add more features such as Notion and Pocket integration.
 
-## Demo application using Angular and .NET Core
+PC/mobile UI:
 
-An [application](https://github.com/truongngoctuan/coding-test001) that submits a simple form to the server.
+![select game](EInkGames/1_select_game.png)
+![select difficulty](EInkGames/2_select_difficulty.png)
+![Play sudoku game](EInkGames/3_sudoku.png)
 
-* FrontEnd: Angular application with 2 components to display users and create new ones.
-* BackEnd: .NET Core Web API to deliver RESTful API.
+Kindle UI:
+![alt text](EInkGames/4_kindle_ui.jpeg)
 
-## Web-based application for private clinics
+### [Sanctuary Store](https://sanctuarystore.co.nz/)
 
-Apply Design Thinking, OKR in the process of implementing a new application, integrate with SOAP-based APIs, and standards in healthcare.
+Sanctuary Store is a New Zealand-based online store that sells organic and natural products. The website is built using React, Redux, and Next.js. This is a simple e-commerce website that I have change to work with, initially as a volunteer and then as a contractor. The website is built using React, Material UI, and Next.js with integration with Shopify and Strapi CMS.
 
-FrontEnd stack:
+### Editing technical documentation
 
-* React, Redux, Next.js
-* State management: Redux, Valtio
-* Styled-components
-* Integrate with block-based Lexical editor (similar to Notion) to provide interactive command-like actions, customize [a select node](Silent/Lexical/custom-select/CustomSelect.component.tsx)
-* Code samples for [a React component](Silent/CodeSamples/module_mail/mail-item/MailItem.tsx) with hooks, TypeScript type definition, Valtio store, styled-components
-* Code samples: [a shared component](Silent/CodeSamples/design_system/ReactSelect/ReactSelect.tsx) from the design system, customize ReactSelect lib to provide a simpler version and adapt to the current theme
-* Implement WebWorkers to prove fuzzy search capacity in the browser for a fixed set of text data
+Last year, I was involved in a project to edit technical documentation for a company. The tasks included to check for typos, gammar, and formating errors. I also had to ensure that the documentation was clear and easy to understand for the target audience.
 
-Systems Design using microservices (from modulo-monolith, ready to split into microservices by topics or serverless), event-based programming with nat.io.
-![Systems Design](/Silent/systems_design_silent.drawio.png)
-
-BackEnd stack:
-
-* Golang APIs, Dockerize, MongoDB
-* Multi-tenant, microservices using nat.io as a service bus
-* BFF architecture (ensure simplicity on the FE side, shifting rules and complexity to the BE side for easy testing)
-* Switch between Restful APIs and Websocket to retrieve event notification for FE
-* CI/CD from GitLab running ShellScript
-* End-to-end testing using PlayWright for happy cases
-* Custom proto code generation for both API Golang server and API Typescript server for both RESTful API and websocket connection
-
-## Multi-players web-based racing game to engage kids to learn literacy
-
-Here is the [portfolio of Readirace game](https://yummyux.com.au/readiracer/) from the Lead designer of 3PL, presenting the idea and implementation.
-
-FrontEnd:
-
-* Using Lottie and animation library to control objects and do animation as per event
-* Viewport detection for iOS and Android devices to change the layout when the keyboard shows up (challenging with older iOS versions in Safari)
-* Micro-frontend using iframe, sharing authentication tokens, each module hosted in different repositories
-
-Systems Design using Onion Architecture, microservices:
-![Systems Design](/3PL/Systems_Design_3PL.drawio.png)
-
-BackEnd:
-
-* Websocket and long-polling connection to ensure data is updated across multiple players in the same room
-* Show the number of online users
-* Join room
-* [Technical design 1](3PL/PYCO-TechnicaldesignforReadiRacergame-060921-0913.pdf) [Technical design 2](3PL/PYCO-MultiplayermodeforReadiRacer-060921-0913.pdf) for the game
-* Cypress end-to-end testing
-* Postman/NewMan to automate API testing
-* [System design](3PL/SATURN-SchoolActivityUsageReport-060921-0915.pdf) for the report and [background request](3PL/SATURN-BackgroundRequestProcessingSystem-060921-0917.pdf)
-
-## Side project: build a React Native application to offer a platform for people to share their trips
-
-TripBff is a traveling mobile app that provides a convenient way to import your images and export infographics to Facebook and other social networks.
-![Video Demo](/TripBff/DemoVideoV1.mp4)
-
-React Native application repository: [TripBffMobile](https://github.com/Reborn1320/tripbffmobile/tree/master/TripBffMobileV2)
-
-* React Native, Redux, Redux Thunk
-
-Backend repository: [TripBff](https://github.com/Reborn1320/tripbffserver/tree/master/apis/trip-api)
-
-* Node.js, Express, MongoDB
-* Terraform to deploy to AWS
+To optimize the process, I wrote a script to automate the process of checking for typos using **regular expressions**. This simple trick saved me a lot of time and effort. I used C# for this task. Please see the [code here](https://github.com/truongngoctuan/personal-site/tree/develop/pocs/iron-cont-edit-auto)
